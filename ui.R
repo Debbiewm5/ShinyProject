@@ -1,9 +1,9 @@
 library(shiny)
 
 shinyUI(
-  navbarPage("mtcars dataset",
+  navbarPage("Developing Data Products - Course Project",
              tabPanel("Fuel Efficiency Study",
-                      fluidPage(
+                      fixedPage(
                         titlePanel("Relationship fuel efficiency and selected variable"),
                         sidebarLayout(
                           sidebarPanel(
@@ -57,7 +57,8 @@ shinyUI(
                       p(" gear - Number of forward gears"),
                       p(" carb - Number of carburetors"),
                       hr(),
-                      p("Source: Henderson and Velleman (1981), Building multiple regression models interactively. Biometrics, 37, 391-411.")
+                      p("Source: Henderson and Velleman (1981), Building multiple regression models interactively. Biometrics, 37, 391-411."),
+                      p("Code available at https://github.com/voilamochu/ShinyProject/")
             )
   )
 )
